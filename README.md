@@ -48,5 +48,5 @@ We offer two types of plans *(మేము రెండు రకాల ప్�
 ### 📞 Contact Us (Contact / संपर्क करें)
 * **WhatsApp:** [+91 9290685554](https://wa.me/919290685554)
 * **Email:** navaneethservicepvtltd@gmail.com
-* **Official Website:** [Click Here to Visit](https://navaneethservicepvtltd-com.github.io/News-Management-System/)
+* **Official Website:** [Click Here to Visit](https://navaneethofficial.github.io/News-Management-System/)
 * **Location:** Andhra Pradesh, India.
