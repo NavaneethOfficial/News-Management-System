@@ -48,11 +48,11 @@ The software runs **only on the registered office computer** using a hardware lo
 | Plan | Duration | Price | Status |
 |-----|----------|------|-------|
 | 🆓 **Trial Plan** | 14 Days | **FREE** | Available |
-| 🥈 **Silver Plan** | 1 Year | **₹6,999 / Year** | 🔥 **Limited Time Offer** |
-| 🥇 **Gold Plan** | 1 Year | — | ⏳ **Coming Soon** |
+| 🥈 **Silver Plan** | 1 Year | ~~₹9,999~~ **₹6,999 / Year** | 🔥 **Launch Offer** |
+| 🥇 **Gold Plan** | 1 Year | ₹17,999 / Year | ⏳ **Coming Soon** |
 
 > 🔔 **Special Launch Offer:**  
-> Silver Plan currently available at **₹6,999 / Year** for a limited time.
+> Silver Plan original price **₹9,999**, now available at **₹6,999 / Year** for a limited time.
 
 ---
 
