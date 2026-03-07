@@ -28,16 +28,16 @@
 
 ### 💰 Pricing Plans (Pricing / मूल्य)
 
-We offer two types of plans *(మేము రెండు రకాల ప్లాన్స్ అందిస్తున్నాము / हम दो प्रकार की योजनाएं प्रदान करते हैं)*:
+We offer three types of plans *(మేము మూడు రకాల ప్లాన్స్ అందిస్తున్నాము / हम तीन प्रकार की योजनाएं प्रदान करते हैं)*:
 
-| Feature | 🥈 Silver Plan (Basic) | 🥇 Gold Plan (Pro) |
-| :--- | :--- | :--- |
-| **Duration** | 1 Year | 1 Year |
-| **Price** | **₹9,999 / Year** | **₹19,999 / Year** |
-| **Reporter App** | ✅ Included | ✅ Included |
-| **Auto-Download** | ✅ Included | ✅ Included |
-| **Live Streaming** | ❌ No | ✅ **Available** |
-| **Support** | Email Support | Priority Call Support |
+| Feature             | 🆓 Trial Plan | 🥈 Silver Plan (Basic) | 🥇 Gold Plan (Pro) |
+| :---                | :---           | :---                    | :---               |
+| **Duration**        | **14 Days**    | 1 Year                  | 1 Year             |
+| **Price**           | **FREE**       | **₹6,999 / Year**       | **₹13,999 / Year** |
+| **Reporter App**    | ✅ Included    | ✅ Included            | ✅ Included        |
+| **Auto-Download**   | ✅ Included    | ✅ Included            | ✅ Included        |
+| **Live Streaming**  | ❌ No          | ❌ No                  | ✅ **Available**   |
+| **AI Voice Anchor** | ❌ No          | ❌ No                  | ⏳ **Coming Soon** |
 
 ---
 
