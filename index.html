@@ -279,6 +279,37 @@ text-decoration:none;
     line-height: 1;
 }
 
+/* Navigation Buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+.next {
+    right: 20px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ff9800;
+}
+
 
 /* Launch Offer Badge */
 
