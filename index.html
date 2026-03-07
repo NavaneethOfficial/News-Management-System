@@ -399,8 +399,12 @@ Connect field reporters directly to your studio with secure and fast technology.
 
 <div id="imageModal" class="modal">
     <span class="close-btn" onclick="closeModal()">&times;</span>
+    
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
     <img class="modal-content" id="expandedImg">
-    <div id="caption"></div>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+    
+    <div id="caption" style="text-align:center; color:#ccc; margin-top:10px; font-weight:bold;"></div>
 </div>
 
 <section class="container" style="margin-top:30px;">
@@ -616,24 +620,60 @@ Connect field reporters directly to your studio with secure and fast technology.
 </footer>
 
 <script>
-    function openModal(src) {
-        var modal = document.getElementById("imageModal");
-        var modalImg = document.getElementById("expandedImg");
-        modal.style.display = "block";
-        modalImg.src = src;
-    }
+    
+let currentImgIndex = 0;
+const images = [
+    "images/admin-panel.png",
+    "images/breaking-scroling.png",
+    "images/live-stream.png",
+    "images/setings.png",
+    "images/reporter-app.png"
+];
 
-    function closeModal() {
-        document.getElementById("imageModal").style.display = "none";
-    }
+function openModal(src) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("expandedImg");
+    const captionText = document.getElementById("caption");
+    
+    modal.style.display = "block";
+    modalImg.src = src;
+    
+    // ప్రస్తుత ఇమేజ్ ఇండెక్స్‌ను కనుగొనడం
+    currentImgIndex = images.indexOf(src.split('/').pop()); 
+    // ఒకవేళ పైన పని చేయకపోతే సింపుల్ గా ఇలా వాడండి:
+    currentImgIndex = images.findIndex(img => src.includes(img));
+    
+    updateCaption();
+}
 
-    // మోడల్ బయట ఎక్కడ క్లిక్ చేసినా క్లోజ్ అవ్వడానికి
-    window.onclick = function(event) {
-        var modal = document.getElementById("imageModal");
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+function changeImage(n) {
+    currentImgIndex += n;
+    
+    // ఇమేజ్‌లు అయిపోతే మళ్ళీ మొదటికి లేదా చివరికి వెళ్లడానికి
+    if (currentImgIndex >= images.length) { currentImgIndex = 0; }
+    if (currentImgIndex < 0) { currentImgIndex = images.length - 1; }
+    
+    document.getElementById("expandedImg").src = images[currentImgIndex];
+    updateCaption();
+}
+
+function updateCaption() {
+    const names = ["Admin Panel", "Breaking News", "Live Stream", "Settings", "Reporter App"];
+    document.getElementById("caption").innerHTML = names[currentImgIndex];
+}
+
+// కీబోర్డ్ ఆరోస్ (Arrows) తో కూడా మార్చుకోవచ్చు
+document.onkeydown = function(e) {
+    if (document.getElementById("imageModal").style.display === "block") {
+        if (e.keyCode === 37) changeImage(-1); // Left arrow
+        if (e.keyCode === 39) changeImage(1);  // Right arrow
+        if (e.keyCode === 27) closeModal();    // Esc key
     }
+};
 </script>
 
 </body>
