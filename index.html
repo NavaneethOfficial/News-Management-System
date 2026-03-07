@@ -12,22 +12,41 @@
 <style>
 
 body{
-<div class="offer-badge">
-🔥 Launch Offer ₹6,999
-</div>
-  
 font-family:'Poppins',sans-serif;
 margin:0;
 background:#f8f9fa;
 color:#333;
 }
 
+/* OFFER BADGE */
+
+.offer-badge{
+position:fixed;
+top:20px;
+right:20px;
+background:#ff0000;
+color:white;
+padding:10px 18px;
+font-weight:bold;
+border-radius:30px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+animation:blinkOffer 1s infinite;
+z-index:999;
+}
+
+@keyframes blinkOffer{
+0%{opacity:1;}
+50%{opacity:0.3;}
+100%{opacity:1;}
+}
+
+/* NAVBAR */
+
 nav{
 background:white;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 padding:15px 5%;
 display:flex;
-justify-content:space-between;
 align-items:center;
 }
 
@@ -58,6 +77,8 @@ color:#777;
 letter-spacing:1px;
 }
 
+/* HERO */
+
 header{
 background:linear-gradient(135deg,#0044cc,#002a80);
 color:white;
@@ -76,6 +97,8 @@ margin:auto;
 opacity:0.9;
 }
 
+/* BUTTON */
+
 .btn-main{
 background:#ff9800;
 color:white;
@@ -86,7 +109,7 @@ font-weight:bold;
 display:inline-block;
 margin-top:25px;
 }
-  
+
 .blink-btn{
 animation: blink 1.2s infinite;
 background:#ff0000;
@@ -98,25 +121,7 @@ background:#ff0000;
 100%{opacity:1;}
 }
 
-.offer-badge{
-position:fixed;
-top:20px;
-right:20px;
-background:#ff0000;
-color:white;
-padding:10px 18px;
-font-weight:bold;
-border-radius:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-animation:blinkOffer 1s infinite;
-z-index:999;
-}
-
-@keyframes blinkOffer{
-0%{opacity:1;}
-50%{opacity:0.3;}
-100%{opacity:1;}
-}
+/* SECTIONS */
 
 .container{
 max-width:1100px;
@@ -162,6 +167,8 @@ border-left:5px solid #ff9800;
 color:#ff9800;
 }
 
+/* WORKFLOW */
+
 .workflow{
 display:flex;
 flex-wrap:wrap;
@@ -179,6 +186,8 @@ font-size:40px;
 color:#0044cc;
 margin-bottom:10px;
 }
+
+/* PRICING */
 
 .pricing{
 background:#f0f2f5;
@@ -233,6 +242,8 @@ font-weight:bold;
 font-size:12px;
 }
 
+/* FOOTER */
+
 footer{
 background:#222;
 color:#bbb;
@@ -249,6 +260,10 @@ text-decoration:none;
 </head>
 
 <body>
+
+<div class="offer-badge">
+🔥 Launch Offer ₹6,999
+</div>
 
 <nav>
 <div class="logo-container">
@@ -306,171 +321,6 @@ Connect field reporters directly to your studio with secure and fast technology.
 <i class="fas fa-lock feature-icon"></i>
 <h3>Device Lock Security</h3>
 <p>Reporter accounts are locked to specific devices for strong security.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="container">
-
-<div class="section-title">
-<h2>Admin Panel Features</h2>
-</div>
-
-<div class="features-grid">
-
-<div class="feature-card">
-<i class="fas fa-folder-open feature-icon"></i>
-<h3>Auto Download News</h3>
-<p>News files automatically download to your system without manual work.</p>
-</div>
-
-<div class="feature-card">
-<i class="fas fa-users feature-icon"></i>
-<h3>Staff Management</h3>
-<p>Register reporters, generate IDs and manage the entire newsroom.</p>
-</div>
-
-<div class="feature-card">
-<i class="fas fa-broadcast-tower feature-icon"></i>
-<h3>Live Stream URL</h3>
-<p>Field reporters can send live streams directly to studio playout.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="app-section">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Reporter Mobile App</h2>
-</div>
-
-<div class="features-grid">
-
-<div class="feature-card app-card">
-<i class="fas fa-cloud-upload-alt feature-icon"></i>
-<h3>Upload News</h3>
-<p>Send photos, videos and scripts directly from field locations.</p>
-</div>
-
-<div class="feature-card app-card">
-<i class="fas fa-video feature-icon"></i>
-<h3>One Click Live</h3>
-<p>Start live broadcast instantly during emergencies or events.</p>
-</div>
-
-<div class="feature-card app-card">
-<i class="fas fa-id-card feature-icon"></i>
-<h3>Digital ID Card</h3>
-<p>Every reporter receives a digital press identity card.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="container">
-
-<div class="section-title">
-<h2>How NMS Pro Works</h2>
-</div>
-
-<div class="workflow">
-
-<div>
-<i class="fas fa-mobile-alt"></i>
-<h3>Reporter</h3>
-<p>Capture news from field</p>
-</div>
-
-<div>
-<i class="fas fa-cloud"></i>
-<h3>Secure Transfer</h3>
-<p>Instant data transfer</p>
-</div>
-
-<div>
-<i class="fas fa-desktop"></i>
-<h3>Admin Desk</h3>
-<p>Studio receives news</p>
-</div>
-
-<div>
-<i class="fas fa-broadcast-tower"></i>
-<h3>Broadcast</h3>
-<p>News goes to TV</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="pricing">
-
-<div class="container">
-
-<div class="section-title">
-<h2>Pricing Plans</h2>
-</div>
-
-<div class="pricing-grid">
-
-<div class="price-card">
-
-<div class="price-header">
-<h3>Free Trial</h3>
-<div class="price">14 Days</div>
-</div>
-
-<ul class="features-list">
-<li>Admin Panel Access</li>
-<li>Reporter Mobile App</li>
-<li>Real-Time News</li>
-<li>Breaking News</li>
-</ul>
-
-</div>
-
-<div class="price-card">
-
-<div class="price-header">
-<h3>Silver Plan</h3>
-<div class="price">₹9,999 / Year</div>
-</div>
-
-<ul class="features-list">
-<li>Admin Panel License</li>
-<li>Reporter App</li>
-<li>Live Streaming</li>
-<li>Email Support</li>
-</ul>
-
-</div>
-
-<div class="price-card">
-
-<div class="badge">COMING SOON</div>
-
-<div class="price-header">
-<h3>Gold Plan</h3>
-<div class="price">₹17,999 / Year</div>
-</div>
-
-<ul class="features-list">
-<li>All Silver Features</li>
-<li>Priority Support</li>
-<li>Advanced Broadcast Tools</li>
-</ul>
-
-</div>
-
 </div>
 
 </div>
