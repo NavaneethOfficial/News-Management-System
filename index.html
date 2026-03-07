@@ -16,9 +16,10 @@ font-family:'Poppins',sans-serif;
 margin:0;
 background:#f8f9fa;
 color:#333;
+line-height:1.6;
 }
 
-/* OFFER BADGE */
+/* LAUNCH OFFER BADGE */
 
 .offer-badge{
 position:fixed;
@@ -50,159 +51,91 @@ display:flex;
 align-items:center;
 }
 
-.logo-container{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.logo-icon{
-font-size:34px;
-color:#0044cc;
-background:#e6f0ff;
-padding:10px;
-border-radius:50%;
-}
-
-.logo-text{
-font-weight:700;
-color:#0044cc;
-font-size:20px;
-line-height:1.2;
-}
-
-.company-subtext{
-font-size:11px;
-color:#777;
-letter-spacing:1px;
-}
+.logo-container{display:flex;align-items:center;gap:15px;}
+.logo-icon{font-size:35px;color:#0044cc;background:#e6f0ff;padding:10px;border-radius:50%;}
+.logo-text{font-size:20px;font-weight:700;color:#0044cc;line-height:1.2;}
+.company-subtext{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:1px;}
 
 /* HERO */
 
 header{
 background:linear-gradient(135deg,#0044cc,#002a80);
 color:white;
-text-align:center;
 padding:80px 20px;
+text-align:center;
 }
 
-header h1{
-font-size:3em;
-margin-bottom:10px;
-}
-
-header p{
-max-width:700px;
-margin:auto;
-opacity:0.9;
-}
-
-/* BUTTON */
+header h1{font-size:3em;margin-bottom:10px;}
+header p{font-size:1.2em;opacity:0.9;max-width:700px;margin:auto;}
 
 .btn-main{
 background:#ff9800;
 color:white;
 padding:15px 40px;
-border-radius:40px;
+font-size:18px;
+border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
 margin-top:25px;
 }
 
+/* BLINK TRIAL BUTTON */
+
 .blink-btn{
-animation: blink 1.2s infinite;
+animation:blinkBtn 1.2s infinite;
 background:#ff0000;
 }
 
-@keyframes blink{
+@keyframes blinkBtn{
 0%{opacity:1;}
-50%{opacity:0.3;}
+50%{opacity:0.4;}
 100%{opacity:1;}
 }
 
 /* SECTIONS */
 
-.container{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.section-title{
-text-align:center;
-margin-bottom:40px;
-}
+.container{max-width:1100px;margin:auto;padding:60px 20px;}
+.section-title{text-align:center;margin-bottom:40px;}
+.section-title h2{font-size:2.2em;margin-bottom:10px;}
 
 .features-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
 .feature-card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
 border-left:5px solid #0044cc;
 }
 
-.feature-icon{
-font-size:30px;
-color:#0044cc;
-margin-bottom:15px;
-}
+.feature-icon{font-size:30px;color:#0044cc;margin-bottom:15px;}
 
 .app-section{
-background:white;
+background:#fff;
+padding:60px 0;
 border-top:1px solid #eee;
 }
 
-.app-card{
-border-left:5px solid #ff9800;
-}
-
-.app-card .feature-icon{
-color:#ff9800;
-}
-
-/* WORKFLOW */
-
-.workflow{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:40px;
-text-align:center;
-}
-
-.workflow div{
-max-width:200px;
-}
-
-.workflow i{
-font-size:40px;
-color:#0044cc;
-margin-bottom:10px;
-}
+.app-card{border-left:5px solid #ff9800;}
+.app-card .feature-icon{color:#ff9800;}
 
 /* PRICING */
 
-.pricing{
-background:#f0f2f5;
-}
-
 .pricing-grid{
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
 gap:30px;
+flex-wrap:wrap;
 }
 
 .price-card{
 background:white;
-width:320px;
+width:350px;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 overflow:hidden;
@@ -210,51 +143,30 @@ position:relative;
 }
 
 .price-header{
-text-align:center;
+background:#f8f9fa;
 padding:30px;
-border-bottom:1px solid #eee;
+text-align:center;
 }
 
-.price{
-font-size:36px;
-font-weight:bold;
-color:#0044cc;
-}
+.price{font-size:40px;font-weight:bold;color:#0044cc;}
 
 .features-list{
-list-style:none;
 padding:30px;
+list-style:none;
 margin:0;
 }
 
-.features-list li{
-margin-bottom:12px;
-}
-
-.badge{
-position:absolute;
-top:15px;
-right:-35px;
-background:#ffd700;
-padding:6px 40px;
-transform:rotate(45deg);
-font-weight:bold;
-font-size:12px;
-}
-
-/* FOOTER */
+.features-list li{margin-bottom:15px;}
 
 footer{
 background:#222;
 color:#bbb;
 text-align:center;
 padding:40px 20px;
+margin-top:50px;
 }
 
-footer a{
-color:#ff9800;
-text-decoration:none;
-}
+footer a{color:#ff9800;text-decoration:none;}
 
 </style>
 </head>
@@ -280,8 +192,7 @@ Navaneeth Media
 <h1>News Management System Pro</h1>
 
 <p>
-Advanced Real-Time News Workflow System for TV Channels.
-Connect field reporters directly to your studio with secure and fast technology.
+Advanced Technology for News Channels. Seamlessly connect your field reporters to your studio.
 </p>
 
 <a href="https://github.com/NavaneethOfficial/News-Management-System/releases/download/v2.0/NMS-Pro-Windows.zip" class="btn-main blink-btn">
@@ -296,36 +207,75 @@ Connect field reporters directly to your studio with secure and fast technology.
 
 </header>
 
-<section class="container">
+<div class="container">
 
 <div class="section-title">
-<h2>Why NMS Pro</h2>
-<p>Modern technology built specifically for television news channels.</p>
+<h2>Admin Panel Features</h2>
 </div>
 
 <div class="features-grid">
 
 <div class="feature-card">
-<i class="fas fa-bolt feature-icon"></i>
-<h3>Real-Time News Transfer</h3>
-<p>Receive news from reporters within seconds directly to your studio system.</p>
+<i class="fas fa-folder-open feature-icon"></i>
+<h3>Auto Download News</h3>
+<p>News sent by reporters is automatically downloaded to your PC.</p>
 </div>
 
 <div class="feature-card">
-<i class="fas fa-tv feature-icon"></i>
-<h3>Breaking & Scrolling</h3>
-<p>Send breaking and scrolling text directly to broadcast systems.</p>
+<i class="fas fa-users-cog feature-icon"></i>
+<h3>Staff Management</h3>
+<p>Easily register and manage field staff.</p>
+</div>
+
+<div class="feature-card">
+<i class="fas fa-broadcast-tower feature-icon"></i>
+<h3>Field to Live Stream</h3>
+<p>Connect reporters directly to live broadcast.</p>
 </div>
 
 <div class="feature-card">
 <i class="fas fa-lock feature-icon"></i>
 <h3>Device Lock Security</h3>
-<p>Reporter accounts are locked to specific devices for strong security.</p>
+<p>Software works only on your registered PC.</p>
 </div>
 
 </div>
 
-</section>
+</div>
+
+<div class="app-section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Reporter Mobile App Features</h2>
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card app-card">
+<i class="fas fa-cloud-upload-alt feature-icon"></i>
+<h3>Direct News Upload</h3>
+<p>Upload videos, photos and scripts directly from field.</p>
+</div>
+
+<div class="feature-card app-card">
+<i class="fas fa-video feature-icon"></i>
+<h3>One Click Live</h3>
+<p>Go live instantly from location.</p>
+</div>
+
+<div class="feature-card app-card">
+<i class="fas fa-id-card feature-icon"></i>
+<h3>Digital ID Card</h3>
+<p>In-built digital ID for reporters.</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 <footer>
 
