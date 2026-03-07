@@ -16,71 +16,223 @@ font-family:'Poppins',sans-serif;
 margin:0;
 background:#f8f9fa;
 color:#333;
-line-height:1.6;
 }
 
-/* LAUNCH OFFER BADGE */
-
-.offer-badge{
-position:fixed;
-top:20px;
-right:20px;
-background:#ff0000;
-color:white;
-padding:10px 18px;
-font-weight:bold;
-border-radius:30px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-animation:blinkOffer 1s infinite;
-z-index:999;
-}
-
-@keyframes blinkOffer{
-0%{opacity:1;}
-50%{opacity:0.3;}
-100%{opacity:1;}
-}
-
-/* NAVBAR */
 
 nav{
 background:white;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 padding:15px 5%;
 display:flex;
+justify-content:space-between;
 align-items:center;
 }
 
-.logo-container{display:flex;align-items:center;gap:15px;}
-.logo-icon{font-size:35px;color:#0044cc;background:#e6f0ff;padding:10px;border-radius:50%;}
-.logo-text{font-size:20px;font-weight:700;color:#0044cc;line-height:1.2;}
-.company-subtext{font-size:11px;color:#777;text-transform:uppercase;letter-spacing:1px;}
+.logo-container{
+display:flex;
+align-items:center;
+gap:15px;
+}
 
-/* HERO */
+.logo-icon{
+font-size:34px;
+color:#0044cc;
+background:#e6f0ff;
+padding:10px;
+border-radius:50%;
+}
+
+.logo-text{
+font-weight:700;
+color:#0044cc;
+font-size:20px;
+line-height:1.2;
+}
+
+.company-subtext{
+font-size:11px;
+color:#777;
+letter-spacing:1px;
+}
 
 header{
 background:linear-gradient(135deg,#0044cc,#002a80);
 color:white;
-padding:80px 20px;
 text-align:center;
+padding:80px 20px;
 }
 
-header h1{font-size:3em;margin-bottom:10px;}
-header p{font-size:1.2em;opacity:0.9;max-width:700px;margin:auto;}
+header h1{
+font-size:3em;
+margin-bottom:10px;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+opacity:0.9;
+}
 
 .btn-main{
 background:#ff9800;
 color:white;
 padding:15px 40px;
-font-size:18px;
-border-radius:50px;
+border-radius:40px;
 text-decoration:none;
 font-weight:bold;
 display:inline-block;
 margin-top:25px;
 }
 
-/* BLINK TRIAL BUTTON */
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+}
+
+.features-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.feature-card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+border-left:5px solid #0044cc;
+}
+
+.feature-icon{
+font-size:30px;
+color:#0044cc;
+margin-bottom:15px;
+}
+
+.app-section{
+background:white;
+border-top:1px solid #eee;
+}
+
+.app-card{
+border-left:5px solid #ff9800;
+}
+
+.app-card .feature-icon{
+color:#ff9800;
+}
+
+.workflow{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+text-align:center;
+}
+
+.workflow div{
+max-width:200px;
+}
+
+.workflow i{
+font-size:40px;
+color:#0044cc;
+margin-bottom:10px;
+}
+
+.pricing{
+background:#f0f2f5;
+}
+
+.pricing-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.price-card{
+background:white;
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+overflow:hidden;
+position:relative;
+}
+
+.price-header{
+text-align:center;
+padding:30px;
+border-bottom:1px solid #eee;
+}
+
+.price{
+font-size:36px;
+font-weight:bold;
+color:#0044cc;
+}
+
+.features-list{
+list-style:none;
+padding:30px;
+margin:0;
+}
+
+.features-list li{
+margin-bottom:12px;
+}
+
+.badge{
+position:absolute;
+top:15px;
+right:-35px;
+background:#ffd700;
+padding:6px 40px;
+transform:rotate(45deg);
+font-weight:bold;
+font-size:12px;
+}
+
+footer{
+background:#222;
+color:#bbb;
+text-align:center;
+padding:40px 20px;
+}
+
+footer a{
+color:#ff9800;
+text-decoration:none;
+}
+
+/* Launch Offer Badge */
+
+.offer-badge{
+position:fixed;
+top:20px;
+right:20px;
+background:#ff0000;
+color:#fff;
+padding:10px 18px;
+border-radius:30px;
+font-weight:bold;
+animation:blinkOffer 1s infinite;
+z-index:999;
+}
+
+@keyframes blinkOffer{
+0%{opacity:1;}
+50%{opacity:0.4;}
+100%{opacity:1;}
+}
+
+/* Blink Trial Button */
 
 .blink-btn{
 animation:blinkBtn 1.2s infinite;
@@ -92,81 +244,6 @@ background:#ff0000;
 50%{opacity:0.4;}
 100%{opacity:1;}
 }
-
-/* SECTIONS */
-
-.container{max-width:1100px;margin:auto;padding:60px 20px;}
-.section-title{text-align:center;margin-bottom:40px;}
-.section-title h2{font-size:2.2em;margin-bottom:10px;}
-
-.features-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.feature-card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-border-left:5px solid #0044cc;
-}
-
-.feature-icon{font-size:30px;color:#0044cc;margin-bottom:15px;}
-
-.app-section{
-background:#fff;
-padding:60px 0;
-border-top:1px solid #eee;
-}
-
-.app-card{border-left:5px solid #ff9800;}
-.app-card .feature-icon{color:#ff9800;}
-
-/* PRICING */
-
-.pricing-grid{
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.price-card{
-background:white;
-width:350px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-overflow:hidden;
-position:relative;
-}
-
-.price-header{
-background:#f8f9fa;
-padding:30px;
-text-align:center;
-}
-
-.price{font-size:40px;font-weight:bold;color:#0044cc;}
-
-.features-list{
-padding:30px;
-list-style:none;
-margin:0;
-}
-
-.features-list li{margin-bottom:15px;}
-
-footer{
-background:#222;
-color:#bbb;
-text-align:center;
-padding:40px 20px;
-margin-top:50px;
-}
-
-footer a{color:#ff9800;text-decoration:none;}
 
 </style>
 </head>
@@ -192,7 +269,8 @@ Navaneeth Media
 <h1>News Management System Pro</h1>
 
 <p>
-Advanced Technology for News Channels. Seamlessly connect your field reporters to your studio.
+Advanced Real-Time News Workflow System for TV Channels.
+Connect field reporters directly to your studio with secure and fast technology.
 </p>
 
 <a href="https://github.com/NavaneethOfficial/News-Management-System/releases/download/v2.0/NMS-Pro-Windows.zip" class="btn-main blink-btn">
@@ -207,7 +285,38 @@ Advanced Technology for News Channels. Seamlessly connect your field reporters t
 
 </header>
 
-<div class="container">
+<section class="container">
+
+<div class="section-title">
+<h2>Why NMS Pro</h2>
+<p>Modern technology built specifically for television news channels.</p>
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card">
+<i class="fas fa-bolt feature-icon"></i>
+<h3>Real-Time News Transfer</h3>
+<p>Receive news from reporters within seconds directly to your studio system.</p>
+</div>
+
+<div class="feature-card">
+<i class="fas fa-tv feature-icon"></i>
+<h3>Breaking & Scrolling</h3>
+<p>Send breaking and scrolling text directly to broadcast systems.</p>
+</div>
+
+<div class="feature-card">
+<i class="fas fa-lock feature-icon"></i>
+<h3>Device Lock Security</h3>
+<p>Reporter accounts are locked to specific devices for strong security.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="container">
 
 <div class="section-title">
 <h2>Admin Panel Features</h2>
@@ -218,64 +327,159 @@ Advanced Technology for News Channels. Seamlessly connect your field reporters t
 <div class="feature-card">
 <i class="fas fa-folder-open feature-icon"></i>
 <h3>Auto Download News</h3>
-<p>News sent by reporters is automatically downloaded to your PC.</p>
+<p>News files automatically download to your system without manual work.</p>
 </div>
 
 <div class="feature-card">
-<i class="fas fa-users-cog feature-icon"></i>
+<i class="fas fa-users feature-icon"></i>
 <h3>Staff Management</h3>
-<p>Easily register and manage field staff.</p>
+<p>Register reporters, generate IDs and manage the entire newsroom.</p>
 </div>
 
 <div class="feature-card">
 <i class="fas fa-broadcast-tower feature-icon"></i>
-<h3>Field to Live Stream</h3>
-<p>Connect reporters directly to live broadcast.</p>
-</div>
-
-<div class="feature-card">
-<i class="fas fa-lock feature-icon"></i>
-<h3>Device Lock Security</h3>
-<p>Software works only on your registered PC.</p>
+<h3>Live Stream URL</h3>
+<p>Field reporters can send live streams directly to studio playout.</p>
 </div>
 
 </div>
 
-</div>
+</section>
 
-<div class="app-section">
+<section class="app-section">
 
 <div class="container">
 
 <div class="section-title">
-<h2>Reporter Mobile App Features</h2>
+<h2>Reporter Mobile App</h2>
 </div>
 
 <div class="features-grid">
 
 <div class="feature-card app-card">
 <i class="fas fa-cloud-upload-alt feature-icon"></i>
-<h3>Direct News Upload</h3>
-<p>Upload videos, photos and scripts directly from field.</p>
+<h3>Upload News</h3>
+<p>Send photos, videos and scripts directly from field locations.</p>
 </div>
 
 <div class="feature-card app-card">
 <i class="fas fa-video feature-icon"></i>
 <h3>One Click Live</h3>
-<p>Go live instantly from location.</p>
+<p>Start live broadcast instantly during emergencies or events.</p>
 </div>
 
 <div class="feature-card app-card">
 <i class="fas fa-id-card feature-icon"></i>
 <h3>Digital ID Card</h3>
-<p>In-built digital ID for reporters.</p>
+<p>Every reporter receives a digital press identity card.</p>
 </div>
 
 </div>
 
 </div>
 
+</section>
+
+<section class="container">
+
+<div class="section-title">
+<h2>How NMS Pro Works</h2>
 </div>
+
+<div class="workflow">
+
+<div>
+<i class="fas fa-mobile-alt"></i>
+<h3>Reporter</h3>
+<p>Capture news from field</p>
+</div>
+
+<div>
+<i class="fas fa-cloud"></i>
+<h3>Secure Transfer</h3>
+<p>Instant data transfer</p>
+</div>
+
+<div>
+<i class="fas fa-desktop"></i>
+<h3>Admin Desk</h3>
+<p>Studio receives news</p>
+</div>
+
+<div>
+<i class="fas fa-broadcast-tower"></i>
+<h3>Broadcast</h3>
+<p>News goes to TV</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="pricing">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Pricing Plans</h2>
+</div>
+
+<div class="pricing-grid">
+
+<div class="price-card">
+
+<div class="price-header">
+<h3>Free Trial</h3>
+<div class="price">14 Days</div>
+</div>
+
+<ul class="features-list">
+<li>Admin Panel Access</li>
+<li>Reporter Mobile App</li>
+<li>Real-Time News</li>
+<li>Breaking News</li>
+</ul>
+
+</div>
+
+<div class="price-card">
+
+<div class="price-header">
+<h3>Silver Plan</h3>
+<div class="price">₹9,999 / Year</div>
+</div>
+
+<ul class="features-list">
+<li>Admin Panel License</li>
+<li>Reporter App</li>
+<li>Live Streaming</li>
+<li>Email Support</li>
+</ul>
+
+</div>
+
+<div class="price-card">
+
+<div class="badge">COMING SOON</div>
+
+<div class="price-header">
+<h3>Gold Plan</h3>
+<div class="price">₹17,999 / Year</div>
+</div>
+
+<ul class="features-list">
+<li>All Silver Features</li>
+<li>Priority Support</li>
+<li>Advanced Broadcast Tools</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 <footer>
 
@@ -288,7 +492,7 @@ Advanced Technology for News Channels. Seamlessly connect your field reporters t
 <p>WhatsApp: +91 9290685554</p>
 
 <p style="opacity:0.6;font-size:13px;margin-top:20px">
-© 2026 Navaneeth Media Service Private Limited
+© 2023 Navaneeth Media Service Private Limited
 </p>
 
 </footer>
