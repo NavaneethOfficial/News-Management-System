@@ -285,10 +285,22 @@ Connect field reporters directly to your studio with secure and fast technology.
 
 </header>
 
-<div class="product-preview" style="text-align:center; margin-top:50px; padding: 10px;">
-    <img src="images/admin-panel.png" 
-         alt="NMS PRO - Advanced News Management Admin Panel" 
-         style="width:90%; max-width:1050px; border-radius:12px; box-shadow: 0 15px 45px rgba(0,0,0,0.1); border: 1px solid #efefef; transition: transform 0.3s ease;">
+<div class="gallery-container">
+    <h2 style="text-align:center; color:#333; margin-top:40px; font-family: sans-serif;">NMS PRO - Interface Overview</h2>
+    
+    <div class="image-grid">
+        <img src="images/admin-panel.png" class="image-item" onclick="openModal(this.src)" alt="Admin Panel">
+        <img src="images/breaking-scroling.png" class="image-item" onclick="openModal(this.src)" alt="Breaking News Scrolling">
+        <img src="images/live-stream.png" class="image-item" onclick="openModal(this.src)" alt="Live Streaming Control">
+        <img src="images/setings.png" class="image-item" onclick="openModal(this.src)" alt="System Settings">
+        <img src="images/reporter-app.png" class="image-item" onclick="openModal(this.src)" alt="Reporter Mobile App">
+    </div>
+</div>
+
+<div id="imageModal" class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="expandedImg">
+    <div id="caption"></div>
 </div>
 
 <section class="container" style="margin-top:30px;">
