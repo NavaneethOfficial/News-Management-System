@@ -331,22 +331,23 @@ text-decoration:none;
 /* Launch Offer Badge */
 
 .offer-badge{
-position:fixed;
-top:95px;
-right:20px;
-background:#ff0000;
-color:#fff;
-padding:10px 18px;
-border-radius:30px;
-font-weight:bold;
-animation:blinkOffer 1s infinite;
-z-index:999;
+    position:fixed;
+    top: 95px;  /* 20px నుండి 95px కి మార్చాను */
+    right: 20px;
+    background:#ff0000;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    animation:blinkOffer 1s infinite;
+    z-index:999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* బ్యాడ్జ్ అందంగా కనిపించడానికి చిన్న నీడ */
 }
 
 @keyframes blinkOffer{
-0%{opacity:1;}
-50%{opacity:0.4;}
-100%{opacity:1;}
+    0%{opacity:1;}
+    50%{opacity:0.4;}
+    100%{opacity:1;}
 }
 
 /* Blink Trial Button */
